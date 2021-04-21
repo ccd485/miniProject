@@ -4,7 +4,7 @@ public class CalendarMain {
 
 	public static void main(String[] args) {
 
-		System.out.println("ÀÏ\t¿ù\tÈ­\t¼ö\t¸ñ\t±İ\tÅä");
+		System.out.println("ì¼\tì›”\tí™”\tìˆ˜\tëª©\tê¸ˆ\tí† ");
 		System.out.println("--------------------------------------------------");
 		System.out.println("1\t2\t3\t4\t5\t6\t7");
 		System.out.println("8\t9\t10\t11\t12\t13\t14");

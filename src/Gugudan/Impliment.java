@@ -2,29 +2,29 @@ package Gugudan;
 
 import java.util.Scanner;
 
-public class Method{
+public class Impliment{
 		Scanner in=new Scanner(System.in);;
 		int dan;
 		
 		public void input() {
-			System.out.println("´ÜÀ» ÀÔ·Â : ");
+			System.out.println("êµ¬êµ¬ë‹¨ ìž…ë ¥ : ");
 			dan = in.nextInt();
 		}
 		public void multi() {
 			for(int i=1; i<10; ++i) {
 				if(dan<1) { 
-					System.out.println("1ÀÌÇÏÀÇ ±¸±¸´ÜÀº ºÒ°¡´É ÇÕ´Ï´Ù"); break;
+					System.out.println("1ì´í•˜ì˜ ë‹¨ìˆ˜ëŠ” ì§€ì›í•˜ì§€ì•ŠìŠµë‹ˆë‹¤"); break;
 				}else System.out.println(dan+"X"+i+"= "+dan*i);
 			}
 		}
 		
 		public void restart() {
-			System.out.println("1.ÀçÀÔ·Â 2.ÇÁ·Î±×·¥Á¾·á : ");
+			System.out.println("1.ìž¬ìž…ë ¥ 2.í”„ë¡œê·¸ëž¨ì¢…ë£Œ : ");
 			int selcet = in.nextInt();
 			switch(selcet) {
 			case 1 : break;
-			case 2 : System.out.println("ÇÁ·Î±×·¥À» Á¾·áÇÕ´Ï´Ù."); System.exit(0);
-				default : System.out.println("´Ù½ÃÀÔ·ÂÇÏ¼¼¿ä"); restart();
+			case 2 : System.out.println("í”„ë¡œê·¸ëž¨ì´ ì¢…ë£Œë©ë‹ˆë‹¤"); System.exit(0);
+				default : System.out.println("ë‹¤ì‹œìž…ë ¥í•˜ì„¸ìš”"); restart();
 			}
 		}
 		
