@@ -5,13 +5,13 @@ import java.awt.event.*;
 
 class MyFrame11 extends Frame implements ActionListener{
 	private Label lb = new Label("", Label.CENTER);
-	private Button bt1 = new Button("����");
-	private Button bt2 = new Button(" �� ");
-	private Button bt3 = new Button(" �� ");
-	private Button bt4 = new Button("����");
+	private Button bt1 = new Button("◀◀");
+	private Button bt2 = new Button(" ◀ ");
+	private Button bt3 = new Button(" ▶ ");
+	private Button bt4 = new Button("▶▶");
 	
 	private Button week_bt[] = new Button[7];
-	private String week_str[] = new String[] {"��", "��", "ȭ", "��", "��", "��", "��"};
+	private String week_str[] = new String[] {"SU", "MO", "TU", "WE", "TH", "FR", "ST"};
 	private Button day_bt[] = new Button[42];
 	
 	private Panel p = new Panel();
@@ -118,13 +118,13 @@ class MyFrame11 extends Frame implements ActionListener{
 		}else if (e.getSource()==bt4) {
 			year++;
 		}
-		lb.setText(year+"�� " + month+"��");
+		lb.setText(year+"년 " + month+"월");
 		buttonSetting();
 	}
 	
 }
 public class CalendarProgram {
 	public static void main(String[] args) {
-		MyFrame11 frame = new MyFrame11("�޷�");
+		MyFrame11 frame = new MyFrame11("달력");
 	}
 }
