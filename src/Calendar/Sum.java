@@ -15,5 +15,6 @@ public class Sum {
 		a=Integer.parseInt(s1);
 		b=Integer.parseInt(s2);
 		System.out.printf("두 수의 합 = %d",a+b);
+		in.close();
 	}
 }
