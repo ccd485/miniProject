@@ -5,10 +5,10 @@ import java.awt.event.*;
 
 class MyFrame11 extends Frame implements ActionListener{
 	private Label lb = new Label("", Label.CENTER);
-	private Button bt1 = new Button("◀◀");
-	private Button bt2 = new Button(" ◀ ");
-	private Button bt3 = new Button(" ▶ ");
-	private Button bt4 = new Button("▶▶");
+	private Button bt1 = new Button("<<");
+	private Button bt2 = new Button(" < ");
+	private Button bt3 = new Button(" > ");
+	private Button bt4 = new Button(">>");
 	
 	private Button week_bt[] = new Button[7];
 	private String week_str[] = new String[] {"SU", "MO", "TU", "WE", "TH", "FR", "ST"};
@@ -32,7 +32,7 @@ class MyFrame11 extends Frame implements ActionListener{
 		left_p.add(bt1);		
 		left_p.add(bt2);		
 		lb.setFont(new Font("", Font.BOLD, 25));
-		lb.setText(year+"�� " + month+"��");
+		lb.setText(year+"." + month);
 		p.add("Center", lb);
 		p.add("East", right_p);
 		right_p.setLayout(new GridLayout(1,2));
@@ -118,13 +118,13 @@ class MyFrame11 extends Frame implements ActionListener{
 		}else if (e.getSource()==bt4) {
 			year++;
 		}
-		lb.setText(year+"년 " + month+"월");
+		lb.setText(year+"." + month);
 		buttonSetting();
 	}
 	
 }
 public class CalendarProgram {
 	public static void main(String[] args) {
-		MyFrame11 frame = new MyFrame11("달력");
+		MyFrame11 frame = new MyFrame11("Calendar");
 	}
 }
