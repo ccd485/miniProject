@@ -1,5 +1,7 @@
 package Calendar;
 
+import java.util.Scanner;
+
 public class CalendarMain {
 
 	public static void main(String[] args) {
@@ -11,6 +13,14 @@ public class CalendarMain {
 		System.out.println("15\t16\t17\t18\t19\t20\t21");
 		System.out.println("22\t23\t24\t25\t26\t27\t28");
 		System.out.println("29\t30\t31");
-
+		
+		Scanner in = new Scanner(System.in);
+		System.out.println("달을 입력하세요");
+		int month = in.nextInt();
+		
+		int [] maxDays= new int [] {31,28,31,30,31,30,31,31,30,31,30,31};
+		
+		System.out.printf("%d월은 %d일까지 있습니다.\n", month,maxDays[month-1]);
+		in.close();
 	}
 }
