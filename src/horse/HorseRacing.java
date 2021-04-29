@@ -34,11 +34,11 @@ class Horse extends Canvas implements Runnable {
 		}
 		ho_curent = ho_stop;
 		this.repaint();
-		HorseRasing.rank_ta.append(rank++ + "등 말 번호 = " + num + "\n");
+		HorseRacing.rank_ta.append(rank++ + "등 말 번호 = " + num + "\n");
 	}
 }
 
-public class HorseRasing extends JFrame implements ActionListener {
+public class HorseRacing extends JFrame implements ActionListener {
 	private JPanel p = new JPanel();
 	private JLabel ho_num_lb = new JLabel("말의  수 : ", JLabel.RIGHT);
 	private JTextField ho_num_tf = new JTextField(5);
@@ -60,7 +60,7 @@ public class HorseRasing extends JFrame implements ActionListener {
 	private Horse[] ho;//말의 갯수를 받아서 배열로 만들자
 	
 	private Container con;
-	public HorseRasing(String title){
+	public HorseRacing(String title){
 		super(title);
 		this.init();
 		this.start();
@@ -138,6 +138,6 @@ public class HorseRasing extends JFrame implements ActionListener {
 		}
 	}
 	public static void main(String[] args) {
-		new HorseRasing("경마게임");
+		new HorseRacing("경마게임");
 	}
 }
