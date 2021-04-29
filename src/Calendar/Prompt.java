@@ -17,12 +17,12 @@ public class Prompt {
 			System.out.println("년을 입력하세요");
 			System.out.println("YEAR>");
 			year = in.nextInt();
+			if(year==-1) break;
 			System.out.println("달을 입력하세요");
 			System.out.println("MONTH>");
 			month = in.nextInt();
-			if (month == -1) {
-				break;
-			} else if (month > 12) {
+			if (month<1||month>12) {
+				System.out.println("달을 입력하세요");
 				continue;
 			}
 			cal.printClendar(year, month);

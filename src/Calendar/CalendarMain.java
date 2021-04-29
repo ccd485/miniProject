@@ -27,7 +27,8 @@ public class CalendarMain {
 		System.out.printf("\t\t%4d년%3d월\n\n",year,month);
 		System.out.println("SUN\tMON\tTUE\tWED\tTHU\tFRI\tSAT");
 		System.out.println("----------------------------------------------------");
-	
+		
+		int weekday=getWeekDay(year,month,1);
 		int maxDay = getLastDaysOfMonth(year,month);
 		for(int i=1; i<=maxDay; i++) {
 			System.out.print(" "+i+"\t");
@@ -36,6 +37,11 @@ public class CalendarMain {
 			}
 		}
 		System.out.println();
+	}
+
+	private int getWeekDay(int year, int month, int i) {
+		
+		return 0;
 	}
 
 }
