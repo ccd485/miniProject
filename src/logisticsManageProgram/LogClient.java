@@ -29,7 +29,7 @@ import javax.swing.JTextArea;
 public class LogClient extends JFrame implements ActionListener{
 	
 	private String textTitle = "품목\t가격\t수량\t출고일\n";
-	private JTextArea result = new JTextArea("list");
+	private JTextArea result = new JTextArea("");
 	private JScrollPane jsp = new JScrollPane(result);
 	LogDialog logdlg = new LogDialog(this, "입력");
 	DatagramSocket ds = null;
