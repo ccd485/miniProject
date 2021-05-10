@@ -88,10 +88,9 @@ public class LogClient extends JFrame implements ActionListener{
 	}
 	
 	public void view (ArrayList<Log_DTO> ld) {
-		list = ld;
-		String textTitle = "품목\t가격\t수량\t출고일\n";
+		String textTitle = "Item\tPrice\tQuantity\tIndate\n";
 		result.setText(textTitle);
-		for(Log_DTO ld2 : list) {
+		for(Log_DTO ld2 : ld) {
 			result.append(ld2.getItem()+"\t");
 			result.append(ld2.getPrice()+"\t");
 			result.append(ld2.getQuantity()+"\t");

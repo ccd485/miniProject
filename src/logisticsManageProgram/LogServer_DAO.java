@@ -87,7 +87,7 @@ public class LogServer_DAO {
 	}
 
 	public ArrayList<Log_DTO> searchLog(String search, String searchString) {
-		
+		ArrayList<Log_DTO> list = new ArrayList<>();
 		try {
 			con = DriverManager.getConnection(url, user, pass);
 			String sql = "select * from logistics where " + search + " like ?";
